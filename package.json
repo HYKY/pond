@@ -1,0 +1,36 @@
+{
+  "name": "@hyky/pond",
+  "version": "0.0.1",
+  "description": "An opinionated CSS reset.",
+  "main": "pond.css",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run build-pond && npm run build-minified", 
+    "build-pond": "node-sass --output-style expanded pond.scss pond.css",
+    "build-minified": "node-sass --output-style compressed pond.scss pond.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HYKY/pond.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "reset"
+  ],
+  "author": "HYKY Team <we@hyky.games>",
+  "contributors": [
+    "Fabio Goto <fabio@hyky.games>",
+    "Robert Rüdiger <robert@hyky.games>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HYKY/pond/issues"
+  },
+  "homepage": "https://github.com/HYKY/pond#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
